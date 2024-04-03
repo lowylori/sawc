@@ -54,3 +54,18 @@ p, li {
 	padding-left: 10px;
 	padding-right: 10px;
 }
+
+/* Header customization */
+header {
+	background-color: white;
+	padding: 5px;
+	justify-content: space-between;
+}
+
+/* Customization of the logo of the website */
+.logo {
+	width: 200px;
+	height: 200px;
+	margin: 0;
+}
+
