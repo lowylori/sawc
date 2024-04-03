@@ -255,16 +255,6 @@ footer {
 	font-family: helvetica, arial, sans-serif;
 }
 
-/* Customization of footer address info */
-address {
-	color: #cfcfcf;
-	text-align: center;
-	font-weight: normal;
-	font-size: 13px;
-	font-family: helvetica, arial, sans-serif;
-	margin-left: 10%;
-	margin-right: 10%;
-}
 
 /* Customization of all footer social media icons */
 .fab {
@@ -283,8 +273,7 @@ address {
 
 /* Customization of footer circle */
 .fa-circle {
-	background: #f6c042;
-	color: #FFF;
+	background: #F99F19;
 }
 
 /* Centers the icon on the webpage */
