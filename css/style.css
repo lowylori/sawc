@@ -281,21 +281,9 @@ address {
     opacity: 0.5;
 }
 
-/* Customization of footer Facebook icon */
-.fa-facebook {
-	background: #637e77;
-	color: #FFF;
-}
-
-/* Customization of footer Twitter icon */
-.fa-twitter {
-	background: #637e77;
-	color: #FFF;
-}
-
-/* Customization of footer Instagram icon */
-.fa-instagram {
-	background: #637e77;
+/* Customization of footer circle */
+.fa-circle {
+	background: #f6c042;
 	color: #FFF;
 }
 
