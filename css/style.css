@@ -241,7 +241,7 @@ header {
 /* Customization of footer background */
 footer {
 	position: static;
-	background-color: var(--navbar-color);
+	background-color: black;
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
