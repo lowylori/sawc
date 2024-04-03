@@ -236,3 +236,72 @@ header {
 	.change .bar3 {transform: translate(0, -11px) rotate(45deg);}
 }
 /* Lori & Craig Navigation Bar CSS Section End */
+
+
+/* Customization of footer background */
+footer {
+	position: static;
+	background-color: var(--navbar-color);
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+/* Customization of footer p element */
+.footertext p {
+	color: #FFF;
+	text-align: center;
+	font-weight: normal;
+	font-size: 13px;
+	font-family: helvetica, arial, sans-serif;
+}
+
+/* Customization of footer address info */
+address {
+	color: #cfcfcf;
+	text-align: center;
+	font-weight: normal;
+	font-size: 13px;
+	font-family: helvetica, arial, sans-serif;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+/* Customization of all footer social media icons */
+.fab {
+	padding: 15px;
+	font-size: 20px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 50%;
+	transition: .3s ease-in-out;
+}
+
+/* Customization of footer social media icon hover - makes icon semi-transparent when user hovers over it */
+.fab:hover {
+    opacity: 0.5;
+}
+
+/* Customization of footer Facebook icon */
+.fa-facebook {
+	background: #637e77;
+	color: #FFF;
+}
+
+/* Customization of footer Twitter icon */
+.fa-twitter {
+	background: #637e77;
+	color: #FFF;
+}
+
+/* Customization of footer Instagram icon */
+.fa-instagram {
+	background: #637e77;
+	color: #FFF;
+}
+
+/* Centers the icon on the webpage */
+.centericon {
+	display: flex;
+    column-gap: 10px;
+    justify-content: center;
+}
