@@ -1,9 +1,62 @@
-<h1>Header 1</h1>
+<!DOCTYPE html>
+<html lang="en">
 
-<h2>Header 2</h2>
+<head>
+	<title>Meet the Team</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+</head>
 
-<h3>Header 3</h3>
+<body>
 
-<h4>Header 4</h4>
+    <header>
+        <!-- This logo will appear on every page of our website -->
+        <!-- When you click the top banner, it will link back to the homepage -->
+        <a href = "index.html">
+            <div class="logo">
+                <img src= "assets/PenguinsSmall.png" alt="Purple Penguins Logo">
+            </div>
+        </a>
+    </header>
 
-<p>This is a paragraph text.</p>
+    <!-- 
+        NAVBAR START
+        Inspired by: https://lowylori.github.io/a3web/index.html
+    -->
+    <div class="navbar" id="myNav">
+        <!-- Creating a div to store the hamburger menu icon with a function that run when the user clicks the icon -->
+        <div class="hamburger" onclick="responsiveNav(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        <a href="index.html">Problem Statement</a>
+        <div class="dropdown">
+            <button class="dropbtn">Methodology</button>
+            <!-- Methodology dropdown menu content -->
+            <div class="dropdown-content">
+                <a href="agolmethod.html">AGOL Method</a>
+                <a href="integratedmethod.html">Integrated Method</a>   <!-- Indicates currently active page -->
+            </div> 
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Solution</button>
+            <!-- Solutions dropdown menu content -->
+            <div class="dropdown-content">
+                <a href="agolsolution.html">AGOL Solution</a>
+                <a href="integratedsolution.html">Integrated Solution</a>
+            </div> 
+        </div>
+        <a href="team.html" class="active">Meet the Team</a>
+    </div>
+
+    <!-- JS script for hamburger menu animation and responsive navbar -->
+    <script src="js/script.js"></script>
+    <!--NAVBAR END-->
+
+        <footer>
+
+        </footer>
+</body>
+
+</html>
