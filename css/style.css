@@ -241,7 +241,7 @@ header {
 /* Customization of footer background */
 footer {
 	position: static;
-	background-color: black;
+	background-color: #4f445f;
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
