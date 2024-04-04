@@ -90,7 +90,7 @@ header {
 
 /* Selects active class for current page */
 .active {
-	background-color: #7f758f;
+	background-color: #8d7fa1;
 	color: white;
 }
 
@@ -114,7 +114,7 @@ header {
 
 /* Customization of the navigation bar links when mouse hovers over them */
 .navbar a:hover, .dropdown:hover .dropbtn {
-	background-color: #7ea69c;
+	background-color: #a296b3;
 	transition: 0.3s;
 }
 
