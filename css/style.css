@@ -73,7 +73,7 @@ header {
 /* Customization of the navigation bar */
 .navbar {
 	overflow: hidden;
-	background-color: black;
+	background-color: #4f445f;
 	transition: .3s ease-in-out;
 }
 
