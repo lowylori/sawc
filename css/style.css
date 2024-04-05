@@ -312,3 +312,61 @@ footer {
 	margin-left: 20px;
 	margin-right: 20px;
 }
+
+/* Expanding Button*/
+#container{
+    display: flex;
+    flex-direction: column;
+    columns: 2;
+    margin: 0 auto;
+    text-align: center;
+}
+.ExpandingButton{
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: space-between;
+    background-color: #4f445f;
+    color: white;
+    cursor: pointer;
+    padding:1.5em;
+    margin-bottom: .3em;
+    border: black .5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.Article {
+    margin-left: 15%;
+    margin-right: 15%;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    line-height: 1.5;
+    text-align: justify;
+
+    }
+   
+.active,.ExpandingButton:hover{
+    background-color: #8d7fa1;
+	
+}
+
+
+/* Need to figure out how to create this icon without it messing up the nav bar active buttons*/
+/*
+.ExpandingButton:after {
+    content: '\002B';
+    color: white;
+    font-size: 20px;
+}
+
+
+	
+
+.active:after {
+    content: "\2212";
+    color: white;
+    font-size: 20px;
+  }
+*/
