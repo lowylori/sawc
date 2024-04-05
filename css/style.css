@@ -283,7 +283,7 @@ footer {
     justify-content: center;
 }
 
-/* AGOL Solutions Page */
+/* AGOL Solutions Page Div boxes */
 .wrapped-content {
 	margin: 25px auto;
 	box-sizing: border-box;
@@ -303,3 +303,12 @@ footer {
 	align-items: center;
 
 } 
+
+/* AGOL Solutions Page Images */
+.solutionimage {
+	max-width: 100%;
+	float: left;
+	display: flex;
+	margin-left: 20px;
+	margin-right: 20px;
+}
