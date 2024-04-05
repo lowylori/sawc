@@ -1,6 +1,6 @@
 /* Customization of Header 1 */
 h1 {
-	color: #41534f;
+	color: #544652;
 	text-align: center;
 	font-weight: bold;
 	font-size: 30px;
@@ -13,7 +13,7 @@ h1 {
 
 /* Customization of Header 2 */
 h2 {
-	color: #637e77;
+	color: #5b4b58;
 	text-align: center;
 	font-weight: bold;
 	font-size: 25px;
@@ -24,7 +24,7 @@ h2 {
 
 /* Customization of Header 3 */
 h3 {
-	color: #7ea69c;
+	color: #7b5672;
 	text-align: center;
 	font-weight: normal;
 	font-size: 20px;
@@ -64,8 +64,8 @@ header {
 
 /* Customization of the logo of the website */
 .logo {
-	width: 200px;
-	height: 200px;
+	width: 150px;
+	height: 150px;
 	margin: 0;
 }
 
@@ -73,7 +73,7 @@ header {
 /* Customization of the navigation bar */
 .navbar {
 	overflow: hidden;
-	background-color: black;
+	background-color: #4f445f;
 	transition: .3s ease-in-out;
 }
 
@@ -90,7 +90,7 @@ header {
 
 /* Selects active class for current page */
 .active {
-	background-color: #637e77;
+	background-color: #8d7fa1;
 	color: white;
 }
 
@@ -114,7 +114,7 @@ header {
 
 /* Customization of the navigation bar links when mouse hovers over them */
 .navbar a:hover, .dropdown:hover .dropbtn {
-	background-color: #7ea69c;
+	background-color: #a296b3;
 	transition: 0.3s;
 }
 
@@ -241,7 +241,7 @@ header {
 /* Customization of footer background */
 footer {
 	position: static;
-	background-color: black;
+	background-color: #4f445f;
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
@@ -282,3 +282,91 @@ footer {
     column-gap: 10px;
     justify-content: center;
 }
+
+/* AGOL Solutions Page Div boxes */
+.wrapped-content {
+	margin: 25px auto;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 75vh;
+	background-color: transparent;
+	width: 80%;
+	padding: 0%;
+}
+
+.wrapped-text-box {
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+} 
+
+/* AGOL Solutions Page Images */
+.solutionimage {
+	max-width: 100%;
+	float: left;
+	display: flex;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+/* Expanding Button*/
+#container{
+    display: flex;
+    flex-direction: column;
+    columns: 2;
+    margin: 0 auto;
+    text-align: center;
+}
+.ExpandingButton{
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: space-between;
+    background-color: #4f445f;
+    color: white;
+    cursor: pointer;
+    padding:1.5em;
+    margin-bottom: .3em;
+    border: black .5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.Article {
+    margin-left: 15%;
+    margin-right: 15%;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    line-height: 1.5;
+    text-align: justify;
+
+    }
+   
+.active,.ExpandingButton:hover{
+    background-color: #8d7fa1;
+	
+}
+
+
+/* Need to figure out how to create this icon without it messing up the nav bar active buttons*/
+/*
+.ExpandingButton:after {
+    content: '\002B';
+    color: white;
+    font-size: 20px;
+}
+
+
+	
+
+.active:after {
+    content: "\2212";
+    color: white;
+    font-size: 20px;
+  }
+*/

@@ -3,6 +3,9 @@
 
 <head>
 	<title>ArcGIS Online Solution</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon Icon is taken from https://www.flaticon.com/ -->
+	<link rel="icon" href="assets/penguin.png">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -13,7 +16,7 @@
         <!-- When you click the top banner, it will link back to the homepage -->
         <a href = "index.html">
             <div class="logo">
-                <img src= "assets/PenguinsSmall.png" alt="Purple Penguins Logo">
+                <img src= "assets/PurplePenguinsLogo.png" alt="Purple Penguins Logo">
             </div>
         </a>
     </header>
@@ -29,7 +32,7 @@
             <div class="bar2"></div>
             <div class="bar3"></div>
           </div>
-        <a href="index.html" class="active">Problem Statement</a>  <!-- Indicates currently active page -->
+        <a href="index.html">Problem Statement</a>  <!-- Indicates currently active page -->
         <div class="dropdown">
             <button class="dropbtn">Methodology</button>
             <!-- Methodology dropdown menu content -->
@@ -42,7 +45,7 @@
             <button class="dropbtn">Solution</button>
             <!-- Solutions dropdown menu content -->
             <div class="dropdown-content">
-                <a href="agolsolution.html">AGOL Solution</a>
+                <a href="agolsolution.html" class="active" >AGOL Solution</a> <!-- Indicates currently active page -->
                 <a href="integratedsolution.html">Integrated Solution</a>
             </div> 
         </div>
@@ -52,62 +55,91 @@
     <!-- JS script for hamburger menu animation and responsive navbar -->
     <script src="js/script.js"></script>
     <!--NAVBAR END-->
-   
-   <h1>  ArcGIS Online Solution </h1>
-   <p>For this solution, we adapted part of the Park and Grounds Managament pre-ade solutions, while adding a reporting components. 
-    The major components we used for this solutions were: 2 Surveys, a dashboard, a management center and a reporting system</p>
-   
-    <h2> Surveys</h2>
-    <p> The first component of this solution was the surveys to collect the request and relavent information. There were two surveys designed for this: one internal and one external.
-      The internal survey was designed for staff to go and inspect an area of peice of equipment. A photo of it here: (add photo-AGOL_Internal). This would require a staff memember to be 
-      logged into their AGOL account, and it would automatically log their name and email. 
-      
-      The external survey was designed for anyone to fill in. It has a reduced number of select options to report an incident and gives the user the option to add in their contact details.
-      A photo of it here: (add photo-AGOL_FullSurvey).
+    <div class= "wrapped-content"> 
+      <div class="wrapped-text-box">
+        <h1>  ArcGIS Online Solution </h1>
+        <p>For this solution, we adapted part of the Park and Grounds Managament pre-ade solutions, while adding a reporting components. 
+          The major components we used for this solutions were: 2 Surveys, a dashboard, a management center and a reporting system</p>
+        </div>
+    </div>    
+    <div class= "wrapped-content"> 
+        <div class="wrapped-text-box">
+          <h2> Surveys</h2>
+            <p> The first component of this solution was the surveys to collect the request and relavent information. There were two surveys designed for this: one internal and one external.
+              The internal survey was designed for staff to go and inspect an area of peice of equipment. A photo of it here: (add photo-AGOL_Internal). This would require a staff memember to be 
+              logged into their AGOL account, and it would automatically log their name and email. </p>
+              <img src="assets/AGOL_InternalSurvey.PNG" alt="AGOL Internal Survey">
+              
+             <p> The external survey was designed for anyone to fill in. It has a reduced number of select options to report an incident and gives the user the option to add in their contact details. </p>
+             <img src="assets/AGOL_FullSuvey1.PNG" alt="AGOL External Survey">
 
-      Both of these surveys then had an accomapning feature layer in ArcGIS Online, as well as they were combined into one feature layer: Requests. 
-    </p>
-    
-    <p> A downfall with the surveys was that they were already published when deploying the solution. This made editing them difficult. If given more time, new surveys with new questions
-      would need to be made to match a clients need. Adding questions to the exisitng survey and republishing it caused an error.  </p>
-    
-      <h2> Managment Center </h2>
-    <p> The data from the surveys were also linked to the managment center. This is where an admin or operations lead would log in and assign the open tasks to an employee to either 
-      inspect or fix. Upon the home page, you are given the option to see the open requests (manage requests) or see the unassigned work (manage assignments). 
-      A photo of it here: (add photo-AGOL_ManagmentCenter).
-      https://experience.arcgis.com/experience/659b8dce9c284f0ba819f52dd331ec70
-    </p>
-    
-    <p> Unfortunatly, this is good in theory but the Manage requests button forms an error now. The program would sometimes work but sometimes provide an error. </p>
+              <p>Both of these surveys then had an accomapning feature layer in ArcGIS Online, as well as they were combined into one feature layer: Requests. 
+            </p>
+            
+            <p> A downfall with the surveys was that they were already published when deploying the solution. This made editing them difficult. If given more time, new surveys with new questions
+              would need to be made to match a clients need. Adding questions to the exisitng survey and republishing it caused an error.  </p>
+        </div>
+      </div>
 
-      <h2> Request Manager </h2>
-      <p> The request is a dashboard that provides a snapshot of open requests, who is assigned to them and any relevant details of the request. 
-        Managers are able to click on specific requests in the table and add more details to them if needed. 
-        A photo of it here: (add photo-AGOL_RequestManager).
+      <div class= "wrapped-content"> 
+        <div class="wrapped-text-box">
+          <h2> Managment Center </h2>
+          <p> The data from the surveys were also linked to the managment center. This is where an admin or operations lead would log in and assign the open tasks to an employee to either 
+            inspect or fix. Upon the home page, you are given the option to see the open requests (manage requests) or see the unassigned work (manage assignments). 
+              Link it here: https://experience.arcgis.com/experience/659b8dce9c284f0ba819f52dd331ec70 </p>
+            A photo of it here: (add photo-AGOL_ManagmentCenter).
+            <img class="solutionimage"src="assets/AGOLManagmentCentre.PNG" alt="AGOL Management Center">
         
-        https://fleming.maps.arcgis.com/apps/dashboards/f103cfd878e44aaeb3207de35781109e
-      </p>
+          <p> Unfortunatly, this is good in theory but the Manage requests button forms an error now. The program would sometimes work but sometimes provide an error. </p>
+        </div>
+    </div>
+      
+    <div class= "wrapped-content"> 
+      <div class="wrapped-text-box">
+        <h2> Request Manager </h2>
+          <p> The request is a dashboard that provides a snapshot of open requests, who is assigned to them and any relevant details of the request. 
+            Managers are able to click on specific requests in the table and add more details to them if needed. 
+            Link it here: https://fleming.maps.arcgis.com/apps/dashboards/f103cfd878e44aaeb3207de35781109e
+          </p>
+          <img class="solutionimage" src="assets/AGOL_RequestManager.PNG" alt="AGOL Request Manager">    
+      </div>
+    </div>
     
+    <div class= "wrapped-content"> 
+      <div class="wrapped-text-box">
       <h2> Request Dashboard</h2>
     <p> The request is a dashboard that provides a snapshot of open requests, where they are on the map, the request type and when the requests were submitted. 
       This is a good visual aid to see how many requests are still open and in what categories are they being reported. 
-      A photo of it here: (add photo-AGOL_Dashboard).
       This is linked in the Management center, on the navigation bar, under requests and monitor. 
       https://fleming.maps.arcgis.com/apps/dashboards/f103cfd878e44aaeb3207de35781109e
     </p>
+
+    <img class="solutionimage" src="assets/AGOL_Dashboard.PNG" alt="AGOL Dashboard">    
+  
     <p> The downside here is I was not able to change the default map extent from my location to the location of where your requests are. You have to search the 
       location of requests in the map extent for the dashboard to show the relevant information </p>
-    <h2> Reporting System</h2>
-    <p> this is filler text</p>
-    <p> this is filler text</p>
+      </div>
+    </div>
+      <div class= "wrapped-content"> 
+        <div class="wrapped-text-box">
+          <h2> Reporting System</h2>
+            <p> this is filler text</p>
+            <p> this is filler text</p>
+        </div>
+      </div>
 
-    <h2> Overall Thoughts</h2>
-    <p> The AGOL solution overall is well designed and would meet the needs of our problem statement. A few issues that arose while working with this solution included the surveys being difficult 
-      to add new questions to, as well as the Managment Dashboard being unreliable. The Managment Dashboard would often have issues connecting to the data, but work other times. For an overall
-      solution, this information could be acessed other places so it would not be the a big down fall of the solution. 
-    </p>
-
-    <!-- Work in Progress -->
+      <div class= "wrapped-content"> 
+        <div class="wrapped-text-box">
+          <h2> Overall Thoughts</h2>
+          <p> The AGOL solution overall is well designed and would meet the needs of our problem statement. A few issues that arose while working with this solution included the surveys being difficult 
+            to add new questions to, as well as the Managment Dashboard being unreliable. The Managment Dashboard would often have issues connecting to the data, but work other times. For an overall
+            solution, this information could be acessed other places so it would not be the a big down fall of the solution. 
+          </p>
+        </div>
+      </div>
+    
+    
+      <!-- Work in Progress -->
     <footer>
       <!-- Fictional Layer Larks address -->
       <div class="footertext">
