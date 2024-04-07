@@ -26,30 +26,30 @@
         Inspired by: https://lowylori.github.io/a3web/index.html
     -->
     <div class="navbar" id="myNav">
-        <!-- Creating a div to store the hamburger menu icon with a function that run when the user clicks the icon -->
-        <div class="hamburger" onclick="responsiveNav(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-          </div>
-        <a href="index.html">Problem Statement</a>  <!-- Indicates currently active page -->
-        <div class="dropdown">
-            <button class="dropbtn">Methodology</button>
-            <!-- Methodology dropdown menu content -->
-            <div class="dropdown-content">
-                <a href="agolmethod.html">AGOL Method</a>
-                <a href="integratedmethod.html">Integrated Method</a>
-            </div> 
-        </div>
-        <div class="dropdown">
-            <button class="dropbtn">Solution</button>
-            <!-- Solutions dropdown menu content -->
-            <div class="dropdown-content">
-                <a href="agolsolution.html" class="active" >AGOL Solution</a> <!-- Indicates currently active page -->
-                <a href="integratedsolution.html">Integrated Solution</a>
-            </div> 
-        </div>
-        <a href="team.html">Meet the Team</a>
+      <!-- Creating a div to store the hamburger menu icon with a function that run when the user clicks the icon -->
+      <div class="hamburger" onclick="responsiveNav(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <a href="index.html">Problem Statement</a>  <!-- Indicates currently active page -->
+      <div class="dropdown">
+          <button class="dropbtn">Methodology</button>
+          <!-- Methodology dropdown menu content -->
+          <div class="dropdown-content">
+              <a href="agolmethod.html">AGOL Method</a>
+              <a href="integratedmethod.html">Integrated Method</a>
+          </div> 
+      </div>
+      <div class="dropdown">
+          <button class="dropbtn">Solution</button>
+          <!-- Solutions dropdown menu content -->
+          <div class="dropdown-content">
+              <a href="agolsolution.html" class="active" >AGOL Solution</a> <!-- Indicates currently active page -->
+              <a href="integratedsolution.html">Integrated Solution</a>
+          </div> 
+      </div>
+      <a href="team.html">Meet the Team</a>
     </div>
 
     <!-- JS script for hamburger menu animation and responsive navbar -->
@@ -62,87 +62,87 @@
         <p>For this solution, we adapted part of the Park and Grounds Management pre-made solutions, while adding a reporting components. 
           The major components we used for this solution was: 2 Surveys, a dashboard, a management center. 
           In addition to the pre-made solutions, we added on Jupyter Notebook to create and send reports of the data collected. </p>
-        </div>
-    </div>    
-    
-    <div class= "wrapped-content"> 
-        <div class="wrapped-text-box">
-          <h2> Surveys</h2>
-            <p> TThe first component of this solution was the surveys to collect the request and relevant information. There were two surveys designed for this: 
-              one internal and one external. The internal survey was designed for staff to go and inspect an area of piece of equipment. 
-              This would require a staff member to be logged into their AGOL account, 
-              and it would automatically log their name and email </p>
-              <img src="assets/AGOL_InternalSurvey.PNG" alt="AGOL Internal Survey">
-              
-             <p> The external survey was designed for anyone to fill in and is designed similarly to the internal solution. It has a reduced number of select options to report an incident 
-              and gives the user the option to add in their contact details.</p>
-             <img src="assets/AGOL_FullSuvey1.PNG" alt="AGOL External Survey">
-
-              <p>Both surveys then had an accompanying feature layer in ArcGIS Online, as well as they were combined into one feature layer: Requests. 
-                This Request layer was the referenced layer in the other components of the solution.  
-            </p>
-            
-            <p> A downfall with the surveys was that they were already published when deploying the solution. This made editing them difficult. If given more time, new surveys with new questions
-              would need to be made to match a clients need. Adding questions to the exisitng survey and republishing it caused an error.  </p>
-        </div>
       </div>
+    </div>    
 
-      <div class= "wrapped-content"> 
-        <div class="wrapped-text-box">
-          <h2> Management Center </h2>
-          <p> The data from the surveys were also linked to the management center. This is where an admin or operations lead would log in and assign the open tasks to an employee to either 
-            inspect or fix. Upon the home page, you are given the option to see the open requests (manage requests) or see the unassigned work (manage assignments). 
-            The Management Center can be found <a href="https://experience.arcgis.com/experience/659b8dce9c284f0ba819f52dd331ec70" target="_blank">here</a>.</p>
-            <img class="solutionimage"src="assets/AGOLManagmentCentre.PNG" alt="AGOL Management Center">
+    <div class= "wrapped-content"> 
+      <div class="wrapped-text-box">
+        <h2> Surveys</h2>
+        <p> TThe first component of this solution was the surveys to collect the request and relevant information. There were two surveys designed for this: 
+          one internal and one external. The internal survey was designed for staff to go and inspect an area of piece of equipment. 
+          This would require a staff member to be logged into their AGOL account, 
+          and it would automatically log their name and email </p>
+        <img src="assets/AGOL_InternalSurvey.PNG" alt="AGOL Internal Survey">
+          
+        <p> The external survey was designed for anyone to fill in and is designed similarly to the internal solution. It has a reduced number of select options to report an incident 
+        and gives the user the option to add in their contact details.</p>
+        <img src="assets/AGOL_FullSuvey1.PNG" alt="AGOL External Survey">
+
+        <p>Both surveys then had an accompanying feature layer in ArcGIS Online, as well as they were combined into one feature layer: Requests. 
+          This Request layer was the referenced layer in the other components of the solution. </p>
         
-          <p> This aspect of the solution would be very beneficial to provide a quick overview of tasks. Unfortunately, after the solution was created and data added, 
-            the management center would often disconnect from the data and provide an error code instead of the open requests.   </p>
-        </div>
+        <p> A downfall with the surveys was that they were already published when deploying the solution. This made editing them difficult. If given more time, new surveys with new questions
+          would need to be made to match a clients need. Adding questions to the exisitng survey and republishing it caused an error.  </p>
+      </div>
+    </div>
+
+    <div class= "wrapped-content"> 
+      <div class="wrapped-text-box">
+        <h2> Management Center </h2>
+        <p> The data from the surveys were also linked to the management center. This is where an admin or operations lead would log in and assign the open tasks to an employee to either 
+          inspect or fix. Upon the home page, you are given the option to see the open requests (manage requests) or see the unassigned work (manage assignments). 
+          The Management Center can be found <a href="https://experience.arcgis.com/experience/659b8dce9c284f0ba819f52dd331ec70" target="_blank">here</a>.</p>
+        <img class="solutionimage"src="assets/AGOLManagmentCentre.PNG" alt="AGOL Management Center">
+      
+        <p> This aspect of the solution would be very beneficial to provide a quick overview of tasks. Unfortunately, after the solution was created and data added, 
+          the management center would often disconnect from the data and provide an error code instead of the open requests.   </p>
+      </div>
     </div>
       
     <div class= "wrapped-content"> 
       <div class="wrapped-text-box">
         <h2> Request Manager </h2>
-          <p> The request is a dashboard that provides a snapshot of open requests, who is assigned to them and any relevant details of the request. 
-            Managers are able to click on specific requests in the table and add more details to them if needed. 
-            The Request Manager can be found <a href="https://fleming.maps.arcgis.com/apps/CrowdsourceManager/index.html?appid=8ff541a874314df9ad40c6de35309f57" target="_blank">here</a>.
-          </p>
-          <img class="solutionimage" src="assets/AGOL_RequestManager.PNG" alt="AGOL Request Manager">    
+        <p> The request is a dashboard that provides a snapshot of open requests, who is assigned to them and any relevant details of the request. 
+          Managers are able to click on specific requests in the table and add more details to them if needed. 
+          The Request Manager can be found <a href="https://fleming.maps.arcgis.com/apps/CrowdsourceManager/index.html?appid=8ff541a874314df9ad40c6de35309f57" target="_blank">here</a>.
+        </p>
+        <img class="solutionimage" src="assets/AGOL_RequestManager.PNG" alt="AGOL Request Manager">    
       </div>
     </div>
     
     <div class= "wrapped-content"> 
       <div class="wrapped-text-box">
-      <h2> Request Dashboard</h2>
+        <h2> Request Dashboard</h2>
         <p> The request is a dashboard that provides a snapshot of open requests, where they are on the map, the request type and when the requests were submitted. 
           This is a good visual aid to see how many requests are still open and in what categories are they being reported. 
           This is linked in the Management center, on the navigation bar, under requests and monitor. 
           The Request Dashboard can be found <a href="https://fleming.maps.arcgis.com/apps/dashboards/f103cfd878e44aaeb3207de35781109e" target="_blank">here</a>.
         </p>
 
-    <img class="solutionimage" src="assets/AGOL_Dashboard.PNG" alt="AGOL Dashboard">    
-  
-    <p> The downside here is I was not able to change the default map extent from my location to the location of where your requests are. You have to search the 
-      location of requests in the map extent for the dashboard to show the relevant information. </p>
+        <img class="solutionimage" src="assets/AGOL_Dashboard.PNG" alt="AGOL Dashboard">    
+
+        <p> The downside here is I was not able to change the default map extent from my location to the location of where your requests are. You have to search the 
+        location of requests in the map extent for the dashboard to show the relevant information. </p>
       </div>
     </div>
-      <div class= "wrapped-content"> 
-        <div class="wrapped-text-box">
-          <h2> Reporting System</h2>
-            <p> this is filler text</p>
-            <p> this is filler text</p>
-        </div>
-      </div>
 
-      <div class= "wrapped-content"> 
-        <div class="wrapped-text-box">
-          <h2> Overall Thoughts</h2>
-          <p> The AGOL solution overall is well designed and would meet the needs of our problem statement. A few issues that arose while working with this solution included the 
-            surveys being difficult to add new questions to, as well as the Management Dashboard being unreliable. If given more time, these issues could be addressed and fixed.
-            As a proof of concept, the solution designed worked well and we believe could be further enhanced to meet the needs set out in our problem statement. 
-          </p>
-        </div>
+    <div class= "wrapped-content"> 
+      <div class="wrapped-text-box">
+        <h2> Reporting System</h2>
+          <p> this is filler text</p>
+          <p> this is filler text</p>
       </div>
+    </div>
+
+    <div class= "wrapped-content1"> 
+      <div class="wrapped-text-box">
+        <h2> Overall Thoughts</h2>
+        <p> The AGOL solution overall is well designed and would meet the needs of our problem statement. A few issues that arose while working with this solution included the 
+          surveys being difficult to add new questions to, as well as the Management Dashboard being unreliable. If given more time, these issues could be addressed and fixed.
+          As a proof of concept, the solution designed worked well and we believe could be further enhanced to meet the needs set out in our problem statement. 
+        </p>
+      </div>
+    </div>
     
     
       <!-- Work in Progress -->
@@ -158,4 +158,4 @@
     </footer>
 
   </body>
-    </html>
+</html>
