@@ -330,7 +330,7 @@ footer {
 	margin-right: 20px;
 }
 
-/* Expanding Button*/
+/* Expanding Button- Integrated Method*/
 #container{
     display: flex;
     flex-direction: column;
@@ -338,6 +338,15 @@ footer {
     margin: 0 auto;
     text-align: center;
 }
+/* Expanding Button- Integrated Method*/
+#containerAGOL{
+    display: flex;
+    flex-direction: column;
+    columns: 2;
+    margin: 0 auto;
+    text-align: center;
+}
+
 .ExpandingButton{
     display: flex;
     margin-left: 10%;
