@@ -331,7 +331,7 @@ footer {
 }
 
 /* Expanding Button*/
-#container{
+.container{
     display: flex;
     flex-direction: column;
     columns: 2;
