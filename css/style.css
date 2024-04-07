@@ -77,7 +77,7 @@ header {
 }
 
 
-/* Customization of the navigation bar */
+/* Customization of the navigation bar Start*/
 .navbar {
 	overflow: hidden;
 	background-color: #4f445f;
@@ -242,7 +242,7 @@ header {
 	.change .bar2 {opacity: 0;}
 	.change .bar3 {transform: translate(0, -11px) rotate(45deg);}
 }
-/* Lori & Craig Navigation Bar CSS Section End */
+/*Navigation Bar CSS Section End */
 
 /* Footer: Inspiration from https://lowylori.github.io/a3web/index.html */
 /* Customization of footer background */
