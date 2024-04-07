@@ -291,7 +291,7 @@ footer {
 
 /* AGOL Solutions Page Div boxes */
 .wrapped-content {
-	margin: 25px auto;
+	margin: 20px auto;
 	box-sizing: border-box;
 	display: flex;
 	justify-content: center;
@@ -301,7 +301,18 @@ footer {
 	width: 80%;
 	padding: 0%;
 }
-
+/* AGOL Solutions Page, first box */
+.wrapped-content1 {
+	margin: 20px auto;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 25vh;
+	background-color: transparent;
+	width: 80%;
+	padding: 0%;
+}
 .wrapped-text-box {
 	justify-content: center;
 	display: flex;
