@@ -503,14 +503,18 @@ hr.rounded {
 */
 /* Create aligned pictures, code inspired by https://www.w3schools.com/howto/howto_css_images_side_by_side.asp*/
 .pictcolumn {
-  float: left;
   width: 50%;
-  padding: 5px;
+  padding: 20px auto;
+  box-sizing: border-box;
+display: flex;
+justify-content: center;
+align-items: center;
 }
-.pictrow::after {
-  content: "";
-  clear: both;
-  display: table;
+.pictrow{
+  display: flex;
+justify-content: center;
+  box-sizing: border-box;
+align-items: center;
 }
 
 @media screen and (max-width: 500px) {
