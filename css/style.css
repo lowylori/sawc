@@ -513,4 +513,8 @@ hr.rounded {
   display: table;
 }
 
-
+@media screen and (max-width: 500px) {
+  .pictcolumn {
+    width: 100%;
+  }
+}
