@@ -501,3 +501,16 @@ hr.rounded {
     font-size: 20px;
   }
 */
+/* Create aligned pictures, code inspired by https://www.w3schools.com/howto/howto_css_images_side_by_side.asp*/
+.pictcolumn {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+.pictrow::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
