@@ -516,7 +516,12 @@ justify-content: center;
   box-sizing: border-box;
 align-items: center;
 }
-
+.picttext{
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 @media screen and (max-width: 500px) {
   .pictcolumn {
     width: 100%;
