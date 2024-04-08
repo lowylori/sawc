@@ -339,7 +339,7 @@ footer {
     margin: 0 auto;
     text-align: center;
 }
-/* Expanding Button- Integrated Method*/
+/* Expanding Button- AGOL Method*/
 #containerAGOL{
     display: flex;
     flex-direction: column;
