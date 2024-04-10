@@ -69,13 +69,24 @@
         <img class="solutionimage" src="assets/ReportingIntegratingSolution.png" alt="Integrated Reporting">    
 	<ol>
 		<li>Recurrance</li>
-		<p>The recurrence happens whenever the report should be sent out. This flow is sent out once a month</p>
+		<p>The recurrence happens whenever the report should be sent out. This flow is sent out once a month.</p>
 		<li>List Rows Present in Table</li>
-		<p>The excel sheet previously created is access, and is later called in dynamic content</p>
+		<p>The excel sheet previously created is access, and is later called in dynamic content.</p>
 		<li>Initialize Variable</li>
-		<p>This creates a counter starting at 0. This is later used to count through how many incidents have occured in the month</p>
+		<p>This creates a counter starting at 0. This is later used to count through how many incidents have occured in the month.</p>
 		<li>For Each</li>
-		<p>For each is the equivalent of a for loop. The loop iterates through the excel table, and increments the counter with each row</p>
+		<p>For each is the equivalent of a for loop. The loop iterates through the excel table, and increments the counter with each row.</p>
+		<li>HTML to Text</li>
+		<p>This action is where HTML is applied to create a report. Right now, there is only the title of the report and how many reports have occured. Input from SAWC would be needed to understand
+		what else is required in the report.</p>
+		<li>Create File</li>
+		<p>The HTML file is uploaded to OneDrive. The date is used in the name so that the file does not overwrite another file.</p>
+		<li>Convert File Using Path</li>
+		<p>The HTML file is converted to a PDF, also with the date in the name.</p>
+		<li>Create File 1</li>
+		<p>The newly created PDF is uploaded to OneDrive.</p>
+		<li>Sent an Email</li>
+		<p>An email is sent with a link to the PDF.</p>
 	</ol>
 	      
       </div>
