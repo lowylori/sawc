@@ -59,9 +59,21 @@
 	<div id = "container">
         <button type = "button" class="ExpandingButton">Step 1: Create Survey</button>
         <div class="Article">
-            <p>Create a survey through AGOL Survey123 or Survey123 Connect desktop application. The survey was 
+            <p>Created a survey in Survey123 Connect. The survey was 
                 created using SAWC needs in mind, collecting location based info, type of request, date, attachment. 
-                Publish the survey once its created.</p>
+                Publish the survey once its created. The following fields were created on the survey (note: these are not the exact field names)</p>
+            <ul>
+                <li>Request Date: the date and time that the request is submitted</li>
+                <li>Email: The user's email address, hidden (needed for automation workflow)</li>
+                <li>Campus Zone Number: Integer from 1-11</li>
+                <li>Priority Level: integer from 1-3</li>
+                <li>Request Type: a string pick list with options for request type - default value set to 'general inspection'</li>
+                <li>Request Location: geopoint of current/selected location</li>
+                <li>point_x: calculate field hidden for longitude (needed for automation workflow)</li>
+                <li>point_y: calculate field hidden for latitude (needed for automation workflow)</li>
+                <li>Additional details: text field to provide further details of the issue</li>
+                <li>Attachment: image field to attach an image of the issue</li>
+            </ul>
         </div>
 
         
