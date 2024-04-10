@@ -314,6 +314,7 @@ footer {
 	width: 80%;
 	padding: 0%;
 }
+
 .wrapped-text-box {
 	justify-content: center;
 	display: flex;
@@ -321,6 +322,13 @@ footer {
 	align-items: center;
 	background-color: #b9b7bd;
 	border-radius: 15px;
+} 
+
+.wrapped-text-box-home {
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 } 
 
 /* AGOL Solutions Page Images */
