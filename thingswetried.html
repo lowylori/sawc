@@ -19,27 +19,61 @@
     </header>
 
 <body>
+<!--
+        NAVBAR START
+        Inspired by: https://lowylori.github.io/a3web/index.html
+    -->
+    <div class="navbar" id="myNav">
+        <!-- Creating a div to store the hamburger menu icon with a function that run when the user clicks the icon -->
+        <div class="hamburger" onclick="responsiveNav(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        <a href="index.html">Problem Statement</a>  
+        <div class="dropdown">
+            <button class="dropbtn">Methodology</button>
+            <!-- Methodology dropdown menu content -->
+            <div class="dropdown-content">
+                <a href="agolmethod.html">AGOL Method</a> 
+                <a href="integratedmethod.html">Integrated Method</a>
+            </div> 
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Solution</button>
+            <!-- Solutions dropdown menu content -->
+            <div class="dropdown-content">
+                <a href="agolsolution.html">AGOL Solution</a>
+                <a href="integratedsolution.html">Integrated Solution</a>
+            </div> 
+        </div>
+        <a href="team.html">Meet the Team</a>
+        <a href="thingswetried.html" class="active">Things We Tried</a> <!-- Indicates currently active page -->
+    </div>
 
+
+    <!--NAVBAR END-->
+    
 <h1> Things we Tried </h1>
 <!--Accordion Button Start-->	
-  <div id = "containerAGOL">
+<div id = "containerOther">
     <button type = "button" class="ExpandingButton">Solution 1</button>
 	    
     <div class="Article">
 	        <p> Filler Text </p>
-	    </div>
+	</div>
    
     <button type = "button" class="ExpandingButton">Solution 2</button> 
     <div class="Article">
 	        <p> Filler Text </p>
-	    </div>
-    </div>
+	</div>
+   
   
  <button type = "button" class="ExpandingButton">Solution 3</button> 
     <div class="Article">
 	        <p> Filler Text </p>
-	    </div>
-    </div>
+	</div>
+</div>
 
 </body>
 </html>
