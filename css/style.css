@@ -347,7 +347,14 @@ footer {
     margin: 0 auto;
     text-align: center;
 }
-
+/* Expanding Button- Other Methods*/
+#containerOther{
+    display: flex;
+    flex-direction: column;
+    columns: 2;
+    margin: 0 auto;
+    text-align: center;
+}
 .ExpandingButton{
     display: flex;
     margin-left: 10%;
