@@ -337,6 +337,7 @@ footer {
 	display: flex;
 	margin-left: 20px;
 	margin-right: 20px;
+	border-radius: 15px;
 }
 
 /* Expanding Button- Integrated Method*/
@@ -346,6 +347,7 @@ footer {
     columns: 2;
     margin: 0 auto;
     text-align: center;
+	border-radius: 15px;
 }
 /* Expanding Button- AGOL Method*/
 #containerAGOL{
@@ -354,6 +356,7 @@ footer {
     columns: 2;
     margin: 0 auto;
     text-align: center;
+	border-radius: 15px;
 }
 /* Expanding Button- Other Methods*/
 #containerOther{
@@ -362,6 +365,7 @@ footer {
     columns: 2;
     margin: 0 auto;
     text-align: center;
+	border-radius: 15px;
 }
 .ExpandingButton{
     display: flex;
@@ -376,6 +380,7 @@ footer {
     border: black .5px;
     font-size: 15px;
     font-weight: bold;
+	border-radius: 15px;
 }
 
 .Article {
