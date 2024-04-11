@@ -64,7 +64,7 @@
                 Once a survey is submitted, the Excel Workflow is initated, populating the excel document with the survey request. From there, 
                 a manager can make modifications to the document, when they assign the task to a staff member. Excel sheets can be printed and 
                 distributed to staff members as necessary. The manager can update tasks when they are 
-                completed and set the completion date. Next, the excel spreadsheet connects to our scheduled report generating workflow, which uses the tasks 
+                completed and set the completion date. Next, the Excel spreadsheet connects to our scheduled report generating workflow, which uses the tasks 
                 and their status to generate reports which are emailed and can be adapted to send out daily, weekly or monthly. </p>
         </div>
       </div>    
@@ -85,7 +85,7 @@
     <div class= "wrapped-content"> 
         <div class="wrapped-text-box">
             <h2>Assigning tasks</h2>
-            <p>We used Power Automate to automate the process of taking a survey request and placing it into the excel onedrive workbook. As mentioned in the methodology, the workbook 
+            <p>We used Power Automate to automate the process of taking a survey request and placing it into the Excel OneDrive workbook. As mentioned in the methodology, the workbook 
                 had to be already set up in order to use this flow. See an image of the flow below.
             </p>
             <img class="solutionimage" src="assets/excelworkflow.png" alt="Power Automate workflow for adding survey responses to excel workbook">
@@ -115,7 +115,7 @@
                         <ol>
                             <li>For Each: <br>This loop iterates through the survey to grab the metadata for the attachment. This is the image attachment url.</li>
                             <li>For Each <br>This loop iterates through the survey to grab the metadata for the response ID.</li>
-                            <li>Add Row into a table: <br>Adds row to low priority table, using the feature attributes from the survey to populate the cells in excel.</li>
+                            <li>Add Row into a table: <br>Adds row to low priority table, using the feature attributes from the survey to populate the cells in Excel.</li>
                         </ol>
                     </li>
                     </ol>
@@ -140,15 +140,15 @@
 	<img class="solutionimage" src="assets/ReportingFlow2.png" alt="Integrated Reporting 2">          
 	<dl>
 		<dt>1. Recurrance</dt>
-		<dd>The recurrence happens whenever the report should be sent out. This flow is sent out once a month.</dd>
+		<dd>The recurrence happens whenever the report should be sent out. This Flow is sent out once a month.</dd>
 		<dt>2. List Rows Present in Table</dt>
-		<dd>The excel sheet previously created is access, and is later called in dynamic content.</dd>
+		<dd>The Excel sheet previously created is access, and is later called in dynamic content.</dd>
 		<dt>3. Initialize Variable</dt>
 		<dd>This creates a counter starting at 0. This is later used to count through how many incidents have occured in the month.</dd>
 		<dt>4. Initialize Variable 2</dt>
 		<dd>Creates the date variable, sets it to the current date with the format mm/dd/yyyy, or just mm if its daily</dd>
 		<dt>5. For Each</dt>
-		<dd>For each is the equivalent of a for loop. The loop iterates through the excel table.</dd>
+		<dd>For each is the equivalent of a for loop. The loop iterates through the Excel table.</dd>
 		<dt>6. Condition</dt>
 		<dd>If the days/months in the rows are equivalent to the current date, the counter is incremented by 1.</dd>
 		<dt>7. HTML to Text</dt>
@@ -172,7 +172,7 @@
 	to change it. Another issue that was found was the emailing of the actual report. Trying to attach a PDF to the email did not work. After some 
 	<a href="https://techcommunity.microsoft.com/t5/power-apps-and-power-automate-in/sending-a-pdf-file-as-an-email-attachment-with-power-automate/m-p/3972229" target="_blank">online research</a>, it was discovered that 
 	this was a common bug
-	with the version 2 of the Send An Email action. The old version was unavailable. Overall, Microsoft Power Automate had many advantages with its pleasing isual display and ability to integrate ESRI software with 
+	with the version 2 of the Send An Email action. The old version was unavailable. Overall, Microsoft Power Automate had many advantages with its pleasing visual display and ability to integrate ESRI software with 
 	Microsoft software. There are many challenges to consider before implementing a FLow as a reporting system. 
 	</p>
       </div>
