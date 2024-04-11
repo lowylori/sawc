@@ -94,23 +94,23 @@
                 <li>Convert time zone: <br>The timezone from the survey is converted from Epoch to UTC central time using a custom function.</li>
                 <li>Control Condition - High Priority: <br>This is an if conditional that uses the survey field for priority, and evaluates to true when priority is set to high.</li>
                 <li>High Priority = True: <br>The following occurs when the condition evaluates to True.</li>
-                <ol type="i">
+                <ol>
                     <li>For Each: <br>This loop iterates through the survey to grab the metadata for the attachment. This is the image attachment url.</li>
                     <li>For Each: <br>This loop iterates through the survey to grab the metadata for the response ID.</li>
                     <li>Add Row into a table <br>Adds row to high priority table, using the feature attributes from the survey to populate the cells in excel.</li>
                 </ol>
                 <li>High Priority = False <br>The following occurs when the condition evaluates to False.</li>
-                <ol type="I">
+                <ol>
                     <li>Control Condition: Medium Priority <br>This is an if conditional that uses the survey field for priority, and evaluates to true when priority is set to medium.</li>
                     <li>Medium Priority = True: <br>The following occurs when the condition evaluates to True.</li>
-                    <ol type="i">
+                    <ol>
                         <li>For Each: <br>This loop iterates through the survey to grab the metadata for the attachment. This is the image attachment url.</li>
                         <li>For Each: <br>This loop iterates through the survey to grab the metadata for the response ID.</li>
                         <li>Add Row into a table <br>Adds row to medium priority table, using the feature attributes from the survey to populate the cells in excel.</li>
                     </ol>
 
                     <li>Medium Priority = False: <br>The following occurs when the condition evaluates to False.</li>
-                    <ol type="i">
+                    <ol>
                         <li>For Each: <br>This loop iterates through the survey to grab the metadata for the attachment. This is the image attachment url.</li>
                         <li>For Each <br>This loop iterates through the survey to grab the metadata for the response ID.</li>
                         <li>Add Row into a table: <br>Adds row to low priority table, using the feature attributes from the survey to populate the cells in excel.</li>
