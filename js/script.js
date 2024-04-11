@@ -14,7 +14,7 @@ var i;
 
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
+    this.classList.toggle("current");
     var Article = this.nextElementSibling;
     if (Article.style.display === "block") {
       Article.style.display = "none";
