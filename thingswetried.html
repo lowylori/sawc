@@ -102,9 +102,9 @@
 	    <div class="Article">
 	        <p>The team explored koboToolbox as an alternative to Survey123. During client discussions, we relized they were open to open source solutions. there 
                 is a community version that allows you to submit up to 5,000 surveys that's free. We created an account and set up a suvey. The interface was easy 
-                to use and very quick to set up. image...
+                to use and very quick to set up.
             </p>
-
+            <img class="thingswetried_images" src="assets/koboSurveySetup.png" alt="Kobo Survey Design Page">
             <p>The survey worked great and there was even a built in report generator that was easy to use. Click here to view the public survey: <a href="https://ee.kobotoolbox.org/x/IP7i0x9E"></a> 
                 Additionally, you have the ability to use REST services to automatically post submissions to a third party application. There was really nothing wrong 
                 with this solution, it was a great platform, but due to our experience and familarity with Survey 123, we went with that instead. We also liked the look 
@@ -117,8 +117,10 @@
                 Our client uses Office 365, and there were web applications used from this suite: Power Automate and Tasks by Planner and To Do. The idea was to create a workflow
                 that triggers when a survey response is submitted. The results are then created as a task in Tasks by Planner and To Do (in teams). First, we set up a sample group 
                 in teams and created a list within the sample group. Then in Power Automate, we set up a flow that connects to our survey123, and is filtered by priority level. 
-                Then a task is created using the feature attibutes of the survey. The task could then be found within the teams planner app or from a web browser in the planner app. img...
+                Then a task is created using the feature attibutes of the survey. The task could then be found within the teams planner app or from a web browser in the planner app.
             </p>
+            <img class="thingswetried_images" src="assets/taskManagementFlow.png" alt="Power Automate workflow for task management">
+            <img class="thingswetried_images" src="assets/plannerTasks.png" alt="Display tasks created from surveys in planner">
             <p>What was difficult about this flow was that even though there are so many fields to customize a task when it's created manually, within the automation actions 
                 in Power Automate, all we could change was the title of the task, the list it goes into, and label colour within the 'create a task' action. In the 'update task details' 
                 we are able to add a description and checklist options. What we can't do is attach a photo, set a location, change the priority level and set the due date. This makes the 
@@ -133,8 +135,9 @@
                 Automate. Next we set the trigger to be when a survey response is submitted and that was fine. We wanted to use a conditional if statement to control the flow of the next 
                 part. This is where we struggled, because although this web app is very easy to use, sometimes when a program is simplified, it makes it difficult to find the things you are 
                 looking for. Turned out the tool I was looking for was a router, and you can apply a conditional filter to it by clicking the settings to each connecting action. I was able 
-                to get the flow working very easily after that. img...
+                to get the flow working very easily after that.
             </p>
+            <img class="thingswetried_images" src="assets/makeWorkflow.png" alt="Workflow in Make for adding survey requests into excel">
             <p>We did like make for its user friendliness and simplicity, however, it did make things harder when you are coming from a technical background. Additionally, there was some 
                 errors that were encountered when setting the Excel 'add worksheet row' action, where the table wasn't connecting. Going into the documentation for excel, we found that it 
                 was serverly lacking. Only holding info on how to create a table. We thought this was strange considering that there are so many other excel actions not included in the 
