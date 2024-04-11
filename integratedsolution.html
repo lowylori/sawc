@@ -155,26 +155,26 @@
 		<dd>The recurrence happens whenever the report should be sent out. This flow is sent out once a month.</dd>
 		<dt>2. List Rows Present in Table</dt>
 		<dd>The excel sheet previously created is access, and is later called in dynamic content.</dd>
-		<dt>Initialize Variable</dt>
+		<dt>3.Initialize Variable</dt>
 		<dd>This creates a counter starting at 0. This is later used to count through how many incidents have occured in the month.</dd>
-		<dt>Initialize Variable 2</dt>
+		<dt>4. Initialize Variable 2</dt>
 		<dd>Creates the date variable, sets it to the current date with the format mm/dd/yyyy, or just mm if its daily</dd>
-		<dt>For Each</dt>
+		<dt>5. For Each</dt>
 		<dd>For each is the equivalent of a for loop. The loop iterates through the excel table.</dd>
-		<dt>Condition</dt>
+		<dt>6. Condition</dt>
 		<dd>If the days/months in the rows are equivalent to the current date, the counter is incremented by 1.</dd>
-		<dt>HTML to Text</dt>
+		<dt>7. HTML to Text</dt>
 		<dd>This action is where HTML is applied to create a report. Right now, there is only the title of the report and how many reports have occured. Input from SAWC would be needed to understand
 		what else is required in the report.</dd>
-		<dt>Create File</dt>
+		<dt>8. Create File</dt>
 		<dd>The HTML file is uploaded to OneDrive. The date is used in the name so that the file does not overwrite another file.</dd>
-		<dt>Convert File Using Path</dt>
+		<dt>9. Convert File Using Path</dt>
 		<dd>The HTML file is converted to a PDF, also with the date in the name.</dd>
-		<dt>Create File 1</dt>
+		<dt>10. Create File 1</dt>
 		<dd>The newly created PDF is uploaded to OneDrive.</dd>
-		<dt>Sent an Email</dt>
+		<dt>11. Sent an Email</dt>
 		<dd>An email is sent with a link to the PDF.</dd>
-        </dl>
+    </dl>
 	<h2>Overall Thoughts</h2>   
 	<p>Microsoft Power Automate is useful for integrating different software into one solution. Team Purple Penguins wanted to come up with a solution that used more well known software like Excel so that 
 	potentially more people could understand the workflow. The dynamic text is useful for Flows that will occur on a timed basis, and Flow also had a lot of online help. However, there were some flaws
