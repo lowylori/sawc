@@ -109,7 +109,15 @@
 
         <button type = "button" class="ExpandingButton">Step 3: Automated Workflow for generating reports</button>
         <div class="Article">
-            <p>Step 3</p>
+            <p>We created a PDF report that shows how many issues there have been in the time Period. The PDF contained the Title, the date converted into a mm/dd/yyyy format, and the number onf incidents</p>
+	<img src="assets/PDFReport.png" alt="PDF Report">
+	<p>The PDF was generated using Microsoft Power Automate on a recurring basis. The PDF would be set to generate every day/week/month. The information was taken from the excel workbook created in Step 2. Variables named date and counter were created to store the current date and 
+	a variable used for iterations. The date was converted from UTC to a mm/dd/yyyy format so that it could be tested against each row in the excel sheet. This ensures that only the rows with the date from the current month/day/week
+	are included in the report. An HTML document was used for formatting, which was then converted into a PDF. This PDF is sent in a link via email. 
+		<br>
+	Depending on what is wanted on the report, the Power Automate Flow could also record the number of a certain type of problem, how many problems were resolved, and other counts. The model that has been created has
+	potential to generate more information. 
+	</p>
         </div>
     </div>
 <!--Accordion Button end-->	
