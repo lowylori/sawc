@@ -52,13 +52,22 @@ h4 {
 }
 
 /* Customization of paragraph text */
-p, li {
+p, li, dt, dl {
 	color:#000;
 	font-weight: normal;
 	font-size: 16px;
 	font-family: helvetica, arial, sans-serif;
 	padding-left: 10px;
 	padding-right: 10px;
+}
+
+dd {
+	color:#000;
+	font-weight: normal;
+	font-size: 16px;
+	font-family: helvetica, arial, sans-serif;
+	margin-top: 16px;
+	margin-bottom: 16px;
 }
 
 /* Header customization */
@@ -446,7 +455,7 @@ hr.rounded {
 }
 
 /* Need to figure out how to create this icon without it messing up the nav bar active buttons*/
-/*
+
 .ExpandingButton:after {
     content: '\002B';
     color: white;
@@ -456,12 +465,12 @@ hr.rounded {
 
 	
 
-.active:after {
+.current:after {
     content: "\2212";
     color: white;
     font-size: 20px;
   }
-*/
+
 /* Create aligned pictures, code inspired by https://www.w3schools.com/howto/howto_css_images_side_by_side.asp*/
 .pictcolumn {
   width: 50%;
