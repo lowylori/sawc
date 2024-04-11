@@ -463,9 +463,6 @@ hr.rounded {
     font-size: 20px;
 }
 
-
-	
-
 .current:after {
     content: "\2212";
     color: white;
@@ -474,18 +471,18 @@ hr.rounded {
 
 /* Create aligned pictures, code inspired by https://www.w3schools.com/howto/howto_css_images_side_by_side.asp*/
 .pictcolumn {
-  width: 50%;
-  padding: 20px;
-  box-sizing: border-box;
-display: flex;
-justify-content: center;
-align-items: center;
+	width: 50%;
+	padding: 20px;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .pictrow{
-  display: flex;
-justify-content: center;
-  box-sizing: border-box;
-align-items: center;
+	display: flex;
+	justify-content: center;
+	box-sizing: border-box;
+	align-items: center;
 }
 .picttext{
 	justify-content: center;
@@ -493,10 +490,10 @@ align-items: center;
 	flex-direction: column;
 	align-items: center;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 100%) {
   .pictcolumn {
     width: auto;
-height: auto;
+    height: auto;
   }
 }
 
