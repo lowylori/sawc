@@ -103,7 +103,8 @@
 		<p>Creates the date variable, sets it to the current date with the format mm/dd/yyyy, or just mm if its daily</p>
 		<li>For Each</li>
 		<p>For each is the equivalent of a for loop. The loop iterates through the excel table.</p>
-		<li>If the days/months in the rows are equivalent to the current date, the counter is incremented by 1.</li>
+		<li>Condition</li>
+		<p>If the days/months in the rows are equivalent to the current date, the counter is incremented by 1.</p>
 		<li>HTML to Text</li>
 		<p>This action is where HTML is applied to create a report. Right now, there is only the title of the report and how many reports have occured. Input from SAWC would be needed to understand
 		what else is required in the report.</p>
@@ -116,9 +117,20 @@
 		<li>Sent an Email</li>
 		<p>An email is sent with a link to the PDF.</p>
 	</ol>
-	      
+	<h2>Overall Thoughts</h2>   
+	<p>Microsoft Power Automate is useful for integrating different software into one solution. Team Purple Penguins wanted to come up with a solution that used more well known software like Excel so that 
+	potentially more people could understand the workflow. The dynamic text is useful for Flows that will occur on a timed basis, and Flow also had a lot of online help. However, there were some flaws
+	to this software. An issue that was common is that certain functions that would be easy to do in a programming language such as Python were slighly more complicated in Power Automate. Adding conditionals
+	and interations took time to fully comprehend. There was also a licensing issue with Power Automate. The ideal way to create a report would be to populate a Word document. However, this was only available to 
+	premium Microsoft users. A solution was found with HTML, but HTML is not a commonly known progamming language for the average person. If the report were to be change, someone with knowledge of HTML would need 
+	to change it. Another issue that was found was the emailing of the actual report. Trying to attach a PDF to the email did not work. After some 
+	<a href = "https://techcommunity.microsoft.com/t5/power-apps-and-power-automate-in/sending-a-pdf-file-as-an-email-attachment-with-power-automate/m-p/3972229"></a>online research</a>, it was discovered that 
+	this was a common bug
+	with the version 2 of the Send An Email action. The old version was unavailable. Overall, Microsoft Power Automate had many advantages with its pleasing isual display and ability to integrate ESRI software with 
+	Microsoft software. There are many challenges to consider before implementing a FLow as a reporting system. 
+	</p>
       </div>
-
+	
 	 
     </div>
     <!-- <div class = "isolution-container">
