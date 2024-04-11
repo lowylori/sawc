@@ -1,6 +1,6 @@
-
+/* STYLE.CSS */
 body {
-	/* background-color:  */
+	/* customization of Body */
 	margin: 0;
 	font-family: helvetica, arial, sans-serif;
 	background-color: #d3cad4d2;
@@ -321,7 +321,7 @@ footer {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: #f2f2f2;
+	background-color: #eceaea;
 	border-radius: 15px;
 } 
 
