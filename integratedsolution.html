@@ -95,14 +95,38 @@
                 <li>Action: Convert time zone</li>
                 <p>The timezone from the survey is converted from Epoch to UTC central time using a custom function.</p>
                 <li>Control Condition: High Priority</li>
-                <p>This is an if conditional that uses the survey field for priority, and evaluates to true when priority is set to high</p>
+                <p>This is an if conditional that uses the survey field for priority, and evaluates to true when priority is set to high.</p>
                 <li>High Priority = True</li>
-                <ol>
-
+                <ol type="i">
+                    <li>For Each</li>
+                    <p>This loop iterates through the survey to grab the metadata for the attachment. This is the image attachment url.</p>
+                    <li>For Each</li>
+                    <p>This loop iterates through the survey to grab the metadata for the response ID.</p>
+                    <li>Add Row into a table</li>
+                    <p>Adds row to table, using the feature attributes from the survey to populate the cells in excel.</p>
                 </ol>
                 <li>High Priority = False</li>
-                <ol>
-                    
+                <ol type="i">
+                    <li>Control Condition: Medium Priority</li>
+                    <p>This is an if conditional that uses the survey field for priority, and evaluates to true when priority is set to medium.</p>
+                    <li>Medium Priority = True</li>
+                    <ol>
+                        <li>For Each</li>
+                        <p>This loop iterates through the survey to grab the metadata for the attachment. This is the image attachment url.</p>
+                        <li>For Each</li>
+                        <p>This loop iterates through the survey to grab the metadata for the response ID.</p>
+                        <li>Add Row into a table</li>
+                        <p>Adds row to medium priority table, using the feature attributes from the survey to populate the cells in excel.</p>
+                    </ol>
+                    <li>Medium Priority = False</li>
+                    <ol>
+                        <li>For Each</li>
+                        <p>This loop iterates through the survey to grab the metadata for the attachment. This is the image attachment url.</p>
+                        <li>For Each</li>
+                        <p>This loop iterates through the survey to grab the metadata for the response ID.</p>
+                        <li>Add Row into a table</li>
+                        <p>Adds row to low priority table, using the feature attributes from the survey to populate the cells in excel.</p>
+                    </ol>
                 </ol>
             </ol>
         </div>
