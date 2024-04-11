@@ -446,7 +446,7 @@ hr.rounded {
 }
 
 /* Need to figure out how to create this icon without it messing up the nav bar active buttons*/
-/*
+
 .ExpandingButton:after {
     content: '\002B';
     color: white;
@@ -456,12 +456,12 @@ hr.rounded {
 
 	
 
-.active:after {
+.current:after {
     content: "\2212";
     color: white;
     font-size: 20px;
   }
-*/
+
 /* Create aligned pictures, code inspired by https://www.w3schools.com/howto/howto_css_images_side_by_side.asp*/
 .pictcolumn {
   width: 50%;
