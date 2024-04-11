@@ -489,3 +489,13 @@ align-items: center;
 height: auto;
   }
 }
+
+/* Things We Tried Page Images */
+.thingswetried_images {
+	max-width: 100%;
+	float: center;
+	display: flex;
+	margin-left: 20px;
+	margin-right: 20px;
+	border-radius: 15px;
+}
