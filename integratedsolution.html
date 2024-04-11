@@ -85,8 +85,26 @@
     <div class= "wrapped-content"> 
         <div class="wrapped-text-box">
             <h2>Assigning tasks</h2>
-            <p></p>
+            <p>We used Power Automate to automate the process of taking a survey request and placing it into the excel onedrive workbook. As mentioned in the methodology, the workbook 
+                had to be already set up in order to use this flow. See an image of the flow below.
+            </p>
+            <!-- image here -->
+            <ol>
+                <li>Trigger</li>
+                <p>The triger for this workflow is when a survey response is submitted</p>
+                <li>Action: Convert time zone</li>
+                <p>The timezone from the survey is converted from Epoch to UTC central time using a custom function.</p>
+                <li>Control Condition: High Priority</li>
+                <p>This is an if conditional that uses the survey field for priority, and evaluates to true when priority is set to high</p>
+                <li>High Priority = True</li>
+                <ol>
 
+                </ol>
+                <li>High Priority = False</li>
+                <ol>
+                    
+                </ol>
+            </ol>
         </div>
     </div>
 
