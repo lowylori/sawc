@@ -90,46 +90,30 @@
             </p>
             <img class="solutionimage" src="assets/excelworkflow.png" alt="Power Automate workflow for adding survey responses to excel workbook">
             <ol>
-                <li>Trigger</li>
-                <p>The triger for this workflow is when a survey response is submitted</p>
-                <li>Action: Convert time zone</li>
-                <p>The timezone from the survey is converted from Epoch to UTC central time using a custom function.</p>
-                <li>Control Condition: High Priority</li>
-                <p>This is an if conditional that uses the survey field for priority, and evaluates to true when priority is set to high.</p>
-                <li>High Priority = True</li>
-                <p>The following occurs when the condition evaluates to True.</p>
+                <li>Trigger: <br>The triger for this workflow is when a survey response is submitted</li>
+                <li>Convert time zone: <br>The timezone from the survey is converted from Epoch to UTC central time using a custom function.</li>
+                <li>Control Condition - High Priority: <br>This is an if conditional that uses the survey field for priority, and evaluates to true when priority is set to high.</li>
+                <li>High Priority = True: <br>The following occurs when the condition evaluates to True.</li>
                 <ol type="i">
-                    <li>For Each</li>
-                    <p>This loop iterates through the survey to grab the metadata for the attachment. This is the image attachment url.</p>
-                    <li>For Each</li>
-                    <p>This loop iterates through the survey to grab the metadata for the response ID.</p>
-                    <li>Add Row into a table</li>
-                    <p>Adds row to high priority table, using the feature attributes from the survey to populate the cells in excel.</p>
+                    <li>For Each: <br>This loop iterates through the survey to grab the metadata for the attachment. This is the image attachment url.</li>
+                    <li>For Each: <br>This loop iterates through the survey to grab the metadata for the response ID.</li>
+                    <li>Add Row into a table <br>Adds row to high priority table, using the feature attributes from the survey to populate the cells in excel.</li>
                 </ol>
-                <li>High Priority = False</li>
-                <p>The following occurs when the condition evaluates to False.</p>
+                <li>High Priority = False <br>The following occurs when the condition evaluates to False.</li>
                 <ol type="I">
-                    <li>Control Condition: Medium Priority</li>
-                    <p>This is an if conditional that uses the survey field for priority, and evaluates to true when priority is set to medium.</p>
-                    <li>Medium Priority = True</li>
-                    <p>The following occurs when the condition evaluates to True.</p>
+                    <li>Control Condition: Medium Priority <br>This is an if conditional that uses the survey field for priority, and evaluates to true when priority is set to medium.</li>
+                    <li>Medium Priority = True: <br>The following occurs when the condition evaluates to True.</li>
                     <ol type="i">
-                        <li>For Each</li>
-                        <p>This loop iterates through the survey to grab the metadata for the attachment. This is the image attachment url.</p>
-                        <li>For Each</li>
-                        <p>This loop iterates through the survey to grab the metadata for the response ID.</p>
-                        <li>Add Row into a table</li>
-                        <p>Adds row to medium priority table, using the feature attributes from the survey to populate the cells in excel.</p>
+                        <li>For Each: <br>This loop iterates through the survey to grab the metadata for the attachment. This is the image attachment url.</li>
+                        <li>For Each: <br>This loop iterates through the survey to grab the metadata for the response ID.</li>
+                        <li>Add Row into a table <br>Adds row to medium priority table, using the feature attributes from the survey to populate the cells in excel.</li>
                     </ol>
-                    <li>Medium Priority = False</li>
-                    <p>The following occurs when the condition evaluates to False.</p>
+
+                    <li>Medium Priority = False: <br>The following occurs when the condition evaluates to False.</li>
                     <ol type="i">
-                        <li>For Each</li>
-                        <p>This loop iterates through the survey to grab the metadata for the attachment. This is the image attachment url.</p>
-                        <li>For Each</li>
-                        <p>This loop iterates through the survey to grab the metadata for the response ID.</p>
-                        <li>Add Row into a table</li>
-                        <p>Adds row to low priority table, using the feature attributes from the survey to populate the cells in excel.</p>
+                        <li>For Each: <br>This loop iterates through the survey to grab the metadata for the attachment. This is the image attachment url.</li>
+                        <li>For Each <br>This loop iterates through the survey to grab the metadata for the response ID.</li>
+                        <li>Add Row into a table: <br>Adds row to low priority table, using the feature attributes from the survey to populate the cells in excel.</li>
                     </ol>
                 </ol>
             </ol>
@@ -155,7 +139,7 @@
 		<dd>The recurrence happens whenever the report should be sent out. This flow is sent out once a month.</dd>
 		<dt>2. List Rows Present in Table</dt>
 		<dd>The excel sheet previously created is access, and is later called in dynamic content.</dd>
-		<dt>3.Initialize Variable</dt>
+		<dt>3. Initialize Variable</dt>
 		<dd>This creates a counter starting at 0. This is later used to count through how many incidents have occured in the month.</dd>
 		<dt>4. Initialize Variable 2</dt>
 		<dd>Creates the date variable, sets it to the current date with the format mm/dd/yyyy, or just mm if its daily</dd>
