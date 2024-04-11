@@ -393,7 +393,7 @@ footer {
     overflow: hidden;
     line-height: 1.5;
     text-align: justify;
-
+	border-radius: 15px;
     }
    
 .active,.ExpandingButton:hover{
