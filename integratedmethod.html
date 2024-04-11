@@ -61,7 +61,8 @@
         <button type = "button" class="ExpandingButton">Step 1: Create Survey</button>
         <div class="Article">
             <p>Created a survey in Survey123 Connect. The survey was 
-                created using SAWC needs in mind, collecting location based info, type of request, date, attachment. 
+                created using SAWC needs in mind, collecting location based info, type of request, date, attachment. Although some of the information we had to add as questions 
+                are already collected in the metadata of the form, we needed to create fields for them to be stored, to keep the next step simplified in power automate.
                 Publish the survey once its created. The following fields were created on the survey (note: these are not the exact field names)</p>
             <ul>
                 <li>Request Date: the date and time that the request is submitted</li>
@@ -75,13 +76,13 @@
                 <li>Additional details: text field to provide further details of the issue</li>
                 <li>Attachment: image field to attach an image of the issue</li>
             </ul>
+            <!-- img goes here -->
         </div>
 
         
         <button type = "button" class="ExpandingButton">Step 2: Automated Workflow for creating an excel spreadsheet</button>
         <div class="Article">
-            <p>There were two web applications we experimented with to create an automated workflow for SAWC staff to keep track of request tasks. We created an
-                excel workbook that has three sheets, one for each level of priority. The fields in the sheets are the same as the survey fields, with the 
+            <p>We created an excel workbook that has three sheets, one for each level of priority. The fields in the sheets are the same as the survey fields, with the 
                 addition of the following: </p>
             <ul>
                 <li>Assigned: Designed to be a Y/N field to indicate if the task has been assigned</li>
@@ -89,6 +90,7 @@
                 <li>Completed: Designed to be a Y/N field to indicate if the task has been completed</li>
                 <li>Date Completed: the date in a standardized format that reflects the day the task was completed</li>
             </ul>
+            <!-- img goes here -->
 
 
 
