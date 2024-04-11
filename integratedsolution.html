@@ -90,12 +90,9 @@
             </p>
             <img class="solutionimage" src="assets/excelworkflow.png" alt="Power Automate workflow for adding survey responses to excel workbook">
             <ol>
-                <li>Trigger</li>
-                <p>The triger for this workflow is when a survey response is submitted</p>
-                <li>Action: Convert time zone</li>
-                <p>The timezone from the survey is converted from Epoch to UTC central time using a custom function.</p>
-                <li>Control Condition: High Priority</li>
-                <p>This is an if conditional that uses the survey field for priority, and evaluates to true when priority is set to high.</p>
+                <li>Trigger: <br> The triger for this workflow is when a survey response is submitted</li>
+                <li>Convert time zone: <br> The timezone from the survey is converted from Epoch to UTC central time using a custom function.</li>
+                <li>Control Condition - High Priority: <br> This is an if conditional that uses the survey field for priority, and evaluates to true when priority is set to high.</li>
                 <li>High Priority = True</li>
                 <p>The following occurs when the condition evaluates to True.</p>
                 <ol type="i">
@@ -155,7 +152,7 @@
 		<dd>The recurrence happens whenever the report should be sent out. This flow is sent out once a month.</dd>
 		<dt>2. List Rows Present in Table</dt>
 		<dd>The excel sheet previously created is access, and is later called in dynamic content.</dd>
-		<dt>3.Initialize Variable</dt>
+		<dt>3. Initialize Variable</dt>
 		<dd>This creates a counter starting at 0. This is later used to count through how many incidents have occured in the month.</dd>
 		<dt>4. Initialize Variable 2</dt>
 		<dd>Creates the date variable, sets it to the current date with the format mm/dd/yyyy, or just mm if its daily</dd>
