@@ -97,6 +97,7 @@
                 <li>Control Condition: High Priority</li>
                 <p>This is an if conditional that uses the survey field for priority, and evaluates to true when priority is set to high.</p>
                 <li>High Priority = True</li>
+                <p>The following occurs when the condition evaluates to True.</p>
                 <ol type="i">
                     <li>For Each</li>
                     <p>This loop iterates through the survey to grab the metadata for the attachment. This is the image attachment url.</p>
@@ -106,11 +107,13 @@
                     <p>Adds row to high priority table, using the feature attributes from the survey to populate the cells in excel.</p>
                 </ol>
                 <li>High Priority = False</li>
-                <ol type="i">
+                <p>The following occurs when the condition evaluates to False.</p>
+                <ol type="I">
                     <li>Control Condition: Medium Priority</li>
                     <p>This is an if conditional that uses the survey field for priority, and evaluates to true when priority is set to medium.</p>
                     <li>Medium Priority = True</li>
-                    <ol>
+                    <p>The following occurs when the condition evaluates to True.</p>
+                    <ol type="i">
                         <li>For Each</li>
                         <p>This loop iterates through the survey to grab the metadata for the attachment. This is the image attachment url.</p>
                         <li>For Each</li>
@@ -119,7 +122,8 @@
                         <p>Adds row to medium priority table, using the feature attributes from the survey to populate the cells in excel.</p>
                     </ol>
                     <li>Medium Priority = False</li>
-                    <ol>
+                    <p>The following occurs when the condition evaluates to False.</p>
+                    <ol type="i">
                         <li>For Each</li>
                         <p>This loop iterates through the survey to grab the metadata for the attachment. This is the image attachment url.</p>
                         <li>For Each</li>
