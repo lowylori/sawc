@@ -91,7 +91,7 @@
             <img class="solutionimage" src="assets/excelworkflow.png" alt="Power Automate workflow for adding survey responses to excel workbook">
             <ol>
                 <li>Trigger</li>
-                <dd>The triger for this workflow is when a survey response is submitted</dd>
+                <p>The triger for this workflow is when a survey response is submitted</p>
                 <li>Action: Convert time zone</li>
                 <p>The timezone from the survey is converted from Epoch to UTC central time using a custom function.</p>
                 <li>Control Condition: High Priority</li>
@@ -150,31 +150,31 @@
         </p>
         <img class="solutionimage" src="assets/ReportingFlow1.png" alt="Integrated Reporting 1">    
 	<img class="solutionimage" src="assets/ReportingFlow2.png" alt="Integrated Reporting 2">          
-	<ol>
-		<li>Recurrance</li>
-		<p>The recurrence happens whenever the report should be sent out. This flow is sent out once a month.</p>
-		<li>List Rows Present in Table</li>
-		<p>The excel sheet previously created is access, and is later called in dynamic content.</p>
-		<li>Initialize Variable</li>
-		<p>This creates a counter starting at 0. This is later used to count through how many incidents have occured in the month.</p>
-		<li>Initialize Variable 2</li>
-		<p>Creates the date variable, sets it to the current date with the format mm/dd/yyyy, or just mm if its daily</p>
-		<li>For Each</li>
-		<p>For each is the equivalent of a for loop. The loop iterates through the excel table.</p>
-		<li>Condition</li>
-		<p>If the days/months in the rows are equivalent to the current date, the counter is incremented by 1.</p>
-		<li>HTML to Text</li>
-		<p>This action is where HTML is applied to create a report. Right now, there is only the title of the report and how many reports have occured. Input from SAWC would be needed to understand
-		what else is required in the report.</p>
-		<li>Create File</li>
-		<p>The HTML file is uploaded to OneDrive. The date is used in the name so that the file does not overwrite another file.</p>
-		<li>Convert File Using Path</li>
-		<p>The HTML file is converted to a PDF, also with the date in the name.</p>
-		<li>Create File 1</li>
-		<p>The newly created PDF is uploaded to OneDrive.</p>
-		<li>Sent an Email</li>
-		<p>An email is sent with a link to the PDF.</p>
-	</ol>
+	<dl>
+		<dt>1. Recurrance</dt>
+		<dd>The recurrence happens whenever the report should be sent out. This flow is sent out once a month.</dd>
+		<dt>2. List Rows Present in Table</dt>
+		<dd>The excel sheet previously created is access, and is later called in dynamic content.</dd>
+		<dt>Initialize Variable</dt>
+		<dd>This creates a counter starting at 0. This is later used to count through how many incidents have occured in the month.</dd>
+		<dt>Initialize Variable 2</dt>
+		<dd>Creates the date variable, sets it to the current date with the format mm/dd/yyyy, or just mm if its daily</dd>
+		<dt>For Each</dt>
+		<dd>For each is the equivalent of a for loop. The loop iterates through the excel table.</dd>
+		<dt>Condition</dt>
+		<dd>If the days/months in the rows are equivalent to the current date, the counter is incremented by 1.</dd>
+		<dt>HTML to Text</dt>
+		<dd>This action is where HTML is applied to create a report. Right now, there is only the title of the report and how many reports have occured. Input from SAWC would be needed to understand
+		what else is required in the report.</dd>
+		<dt>Create File</dt>
+		<dd>The HTML file is uploaded to OneDrive. The date is used in the name so that the file does not overwrite another file.</dd>
+		<dt>Convert File Using Path</dt>
+		<dd>The HTML file is converted to a PDF, also with the date in the name.</dd>
+		<dt>Create File 1</dt>
+		<dd>The newly created PDF is uploaded to OneDrive.</dd>
+		<dt>Sent an Email</dt>
+		<dd>An email is sent with a link to the PDF.</dd>
+        </dl>
 	<h2>Overall Thoughts</h2>   
 	<p>Microsoft Power Automate is useful for integrating different software into one solution. Team Purple Penguins wanted to come up with a solution that used more well known software like Excel so that 
 	potentially more people could understand the workflow. The dynamic text is useful for Flows that will occur on a timed basis, and Flow also had a lot of online help. However, there were some flaws
