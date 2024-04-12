@@ -5,6 +5,7 @@ body {
 	font-family: helvetica, arial, sans-serif;
 	background-color: #d3cad4d2;
 }
+
 /* Customization of Header 1 */
 h1 {
 	color: #544652;
@@ -58,7 +59,6 @@ p, li {
 	font-size: 16px;
 	font-family: helvetica, arial, sans-serif;
 	padding: 10px;
-
 }
 
 dd, dt {
@@ -170,12 +170,14 @@ header {
     1% {opacity: 0}
     100% {opacity: 1}
 }
+
 /* Key frames animation for internet explorer */
 @keyframes fadeInFromNoneIE {
     0% {opacity: 0}
     1% {opacity: 0}
 	100% {opacity: 1}
 }
+
 /* Key frames animation for modern browsers that follow standard CSS specifications */
 @keyframes fadeInFromNone {
     0% {opacity: 0}
@@ -326,6 +328,14 @@ footer {
 	border-radius: 15px;
 }
 
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+  }
+
+/* Solutions Page Div text boxes */
 .wrapped-text-box {
 	justify-content: center;
 	display: flex;
@@ -384,6 +394,7 @@ footer {
 	border-radius: 15px;
 	padding-bottom: 25px;
 }
+
 /* Expanding Button- Other Methods*/
 #containerOther{
     display: flex;
@@ -396,7 +407,7 @@ footer {
 
 @media only screen and (min-width: 1200px) {
 	/* fixing footer on things we tried page for a extra large screen */
-	#containerOther{padding-bottom: 250px;}
+	#containerOther {padding-bottom: 250px;}
 }
 
 
@@ -425,11 +436,10 @@ footer {
     line-height: 1.5;
     text-align: justify;
 	border-radius: 15px;
-    }
+}
    
 .active,.ExpandingButton:hover{
     background-color: #8d7fa1;
-	
 }
 
 /* Customization of banner class */
@@ -469,13 +479,13 @@ hr.rounded {
 	margin: 25px;
 }
 
+/* Paragraph styling for home page */
 .home p {
 	padding-left: 50px;
 	padding-right: 50px;
 	text-align: center;
 }
 
-/* Need to figure out how to create this icon without it messing up the nav bar active buttons*/
 
 .ExpandingButton:after {
     content: '\002B';
@@ -487,7 +497,7 @@ hr.rounded {
     content: "\2212";
     color: white;
     font-size: 20px;
-  }
+}
 
 /* Create aligned pictures, code inspired by https://www.w3schools.com/howto/howto_css_images_side_by_side.asp*/
 .pictcolumn {
@@ -498,12 +508,14 @@ hr.rounded {
 	justify-content: center;
 	align-items: center;
 }
+
 .pictrow{
 	display: flex;
 	justify-content: center;
 	box-sizing: border-box;
 	align-items: center;
 }
+
 .picttext{
 	justify-content: center;
 	display: flex;
