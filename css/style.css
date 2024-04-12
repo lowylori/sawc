@@ -332,7 +332,7 @@ footer {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 50%;
+	width: 100%;
   }
 
 /* Solutions Page Div text boxes */
@@ -534,10 +534,10 @@ hr.rounded {
 
 /* Customization on the teams button */
 .link {
-    background-color: #43524d;
+    background-color: #544652;
     border: none;
     color: white;
-    padding: 15px 10px;
+    padding: 5px 25px;
     justify-content: center;
     text-decoration: none;
     display: flex;
