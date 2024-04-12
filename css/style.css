@@ -353,6 +353,14 @@ footer {
 	border-radius: 15px;
 }
 
+/* Methods Page Images */
+.img-small {
+    width: 75%;
+    height: 75%;
+    border: solid;
+    border-radius: 15px;
+    border-color: #544652
+}
 /* Expanding Button- Integrated Method*/
 #container{
     display: flex;
