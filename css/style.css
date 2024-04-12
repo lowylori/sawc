@@ -532,6 +532,28 @@ hr.rounded {
 	border-radius: 15px;
 }
 
+/* Customization on the teams button */
+.link {
+    background-color: #43524d;
+    border: none;
+    color: white;
+    padding: 15px 10px;
+    justify-content: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 18px;
+    flex-basis: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 6px;
+}
+/* Customization of team-link class */
+.team-link {
+    margin: 20px;
+}
+
+
 /* Responsive design for resizing images */
 img {
 	max-width: 100%;   
