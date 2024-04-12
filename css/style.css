@@ -355,8 +355,8 @@ footer {
 
 /* Methods Page Images */
 .img-small {
-    width: 75%;
-    height: 75%;
+    width: 768px;
+    height: 576px;
     border: solid;
     border-radius: 15px;
     border-color: #544652
