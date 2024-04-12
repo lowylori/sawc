@@ -83,7 +83,7 @@
                 <li>Additional details: text field to provide further details of the issue</li>
                 <li>Attachment: image field to attach an image of the issue</li>
             </ul>
-            <img src="assets/surveyxlsxedit.png" alt="the workbook containing the survey fields and esri field types">
+            <img src="assets/surveyxlsxedit.png" class="center" alt="the workbook containing the survey fields and esri field types">
         </div>
 
         <button type = "button" class="ExpandingButton">Step 2: Automated Workflow for creating an Excel spreadsheet</button>
@@ -96,7 +96,7 @@
                 <li>Completed: Designed to be a Y/N field to indicate if the task has been completed</li>
                 <li>Date Completed: the date in a standardized format that reflects the day the task was completed</li>
             </ul>
-            <img src="assets/blankExceledit.png" class="solutionimage" alt="Excel table">
+            <img src="assets/blankExceledit.png" class="center" alt="Excel table">
 
 
             <p>First, we used Power Automate aka Flow which is a microsoft product in the Office 365 suite. The second software was called Make, which can be 
@@ -115,7 +115,7 @@
         <button type = "button" class="ExpandingButton">Step 3: Automated Workflow for generating reports</button>
         <div class="Article">
             <p>We created a PDF report that shows how many issues there have been in the time period. The PDF contains the title, the date converted into a mm/dd/yyyy format, and the number of incidents</p>
-	<img src="assets/PDFReport.png" alt="PDF Report">
+	<img src="assets/PDFReport.png" class="center" alt="PDF Report">
 	<p>The PDF was generated using a Microsoft Power Automate Flow on a recurring basis. The Flow would be set to run every day/week/month. The information was taken from the excel workbook created in Step 2. Variables named date and counter were created to store the current date and 
 	a variable used for iterations. The date was converted from UTC to a mm/dd/yyyy format so that it could be tested against each row in the excel sheet. This ensures that only the rows with the date from the current month/day/week
 	are included in the report. An HTML document was used for formatting, which was then converted into a PDF. This PDF is sent in a link via email. 
