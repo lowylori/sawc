@@ -361,6 +361,7 @@ footer {
     border-radius: 15px;
     border-color: #544652
 }
+
 /* Expanding Button- Integrated Method*/
 #container{
     display: flex;
@@ -371,6 +372,7 @@ footer {
 	border-radius: 15px;
 	padding-bottom: 25px;
 }
+
 /* Expanding Button- AGOL Method*/
 #containerAGOL{
     display: flex;
@@ -389,8 +391,14 @@ footer {
     margin: 0 auto;
     text-align: center;
 	border-radius: 15px;
-	padding-bottom: 250px;
 }
+
+@media only screen and (min-width: 1200px) {
+	/* fixing footer on things we tried page for a extra large screen */
+	#containerOther{padding-bottom: 250px;}
+}
+
+
 .ExpandingButton{
     display: flex;
     margin-left: 10%;
