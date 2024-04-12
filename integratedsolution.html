@@ -61,7 +61,7 @@
                 <h1> Integrated Solution</h1>
                 <p>For this solution, we integrated Survey123, Power Automate and Excel Onedrive to create a dynamic solution that
                     enables us to accomplish a similar solution to AGOL that adapts to the existing technological knowledge of the client.
-                    Once a survey is submitted, the Excel Workflow is initated, populating the excel document with the survey request. From there, 
+                    Once a survey is submitted, the Excel Workflow is initiated, populating the excel document with the survey request. From there, 
                     a manager can make modifications to the document, when they assign the task to a staff member. Excel sheets can be printed and 
                     distributed to staff members as necessary. The manager can update tasks when they are 
                     completed and set the completion date. Next, the excel spreadsheet connects to our scheduled report generating workflow, which uses the tasks 
@@ -72,8 +72,7 @@
         <div class= "wrapped-content"> 
             <div class="wrapped-text-box">
                 <h2>Survey123</h2>
-                <p>The request form created in Survey123 was specially adapted to be used with the automated workflow. A copy of the public survey 
-                    can be found here <a href="https://survey123.arcgis.com/share/9dcdb3c684fd455491cafe68eaa8d646?portalUrl=https://Fleming.maps.arcgis.com" target="_blank">A copy of 
+                <p>The request form created in Survey123 was specially adapted to be used with the automated workflow. <a href="https://survey123.arcgis.com/share/9dcdb3c684fd455491cafe68eaa8d646?portalUrl=https://Fleming.maps.arcgis.com" target="_blank">A copy of 
                         the public survey can be found here</a></p>
                 <img class="solutionimage" src="assets/surveyFormpt1.png" alt="First half of the survey form">
                 <img class="solutionimage" src="assets/surveyFormpt2.png" alt="Second half of the survey form">
@@ -85,13 +84,13 @@
         <div class= "wrapped-content"> 
             <div class="wrapped-text-box">
                 <h2>Assigning tasks</h2>
-                <p>We used Power Automate to automate the process of taking a survey request and placing it into the excel onedrive workbook. As mentioned in the methodology, the workbook 
+                <p>We used Power Automate to automate the process of taking a survey request and placing it into the Excel Onedrive workbook. As mentioned in the methodology, the workbook 
                     had to be already set up in order to use this flow. See an image of the flow below.
                 </p>
                 <img class="solutionimage" src="assets/excelworkflow.png" alt="Power Automate workflow for adding survey responses to excel workbook">
                 <!-- Nested ordered lists using br to put on a new line bc only child element of ol is li, and we wanted the description on a new line -->
                 <ol>
-                    <li>Trigger: <br>The triger for this workflow is when a survey response is submitted</li>
+                    <li>Trigger: <br>The trigger for this workflow is when a survey response is submitted</li>
                     <li>Convert time zone: <br>The timezone from the survey is converted from Epoch to UTC central time using a custom function.</li>
                     <li>Control Condition - High Priority: <br>This is an if conditional that uses the survey field for priority, and evaluates to true when priority is set to high.</li>
                     <li>High Priority = True: <br>The following occurs when the condition evaluates to True.
@@ -121,7 +120,7 @@
                         </ol>
                     </li>
                 </ol>
-                <p>The final excel sheet with survey responsed populated looks like this:</p>
+                <p>The final excel sheet with survey responded populated looks like this:</p>
                 <img class="solutionimage" src="assets/excelFinal.png" alt="Excel high priority populated table">
 
             </div>
@@ -166,13 +165,13 @@
                 <h2>Overall Thoughts</h2>   
                 <p>Microsoft Power Automate is useful for integrating different software into one solution. Team Purple Penguins wanted to come up with a solution that used more well known software like Excel so that 
                 potentially more people could understand the workflow. The dynamic text is useful for Flows that will occur on a timed basis, and Flow also had a lot of online help. However, there were some flaws
-                to this software. An issue that was common is that certain functions that would be easy to do in a programming language such as Python were slighly more complicated in Power Automate. Adding conditionals
-                and interations took time to fully comprehend. There was also a licensing issue with Power Automate. The ideal way to create a report would be to populate a Word document. However, this was only available to 
+                to this software. An issue that was common is that certain functions that would be easy to do in a programming language such as Python were slightly more complicated in Power Automate. Adding conditionals
+                and iterations took time to fully comprehend. There was also a licensing issue with Power Automate. The ideal way to create a report would be to populate a Word document. However, this was only available to 
                 premium Microsoft users. A solution was found with HTML, but HTML is not a commonly known progamming language for the average person. If the report were to be change, someone with knowledge of HTML would need 
                 to change it. Another issue that was found was the emailing of the actual report. Trying to attach a PDF to the email did not work. After some 
                 <a href="https://techcommunity.microsoft.com/t5/power-apps-and-power-automate-in/sending-a-pdf-file-as-an-email-attachment-with-power-automate/m-p/3972229" target="_blank">online research</a>, it was discovered that 
                 this was a common bug
-                with the version 2 of the Send An Email action. The old version was unavailable. Overall, Microsoft Power Automate had many advantages with its pleasing isual display and ability to integrate ESRI software with 
+                with the version 2 of the Send An Email action. The old version was unavailable. Overall, Microsoft Power Automate had many advantages with its pleasing visual display and ability to integrate ESRI software with 
                 Microsoft software. There are many challenges to consider before implementing a FLow as a reporting system. 
                 </p>
             </div>
