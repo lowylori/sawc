@@ -1,7 +1,13 @@
+html, body {
+	min-height: 100vh;
+}
+
 /* STYLE.CSS */
 body {
 	/* customization of Body */
 	margin: 0;
+	display: flex;
+	flex-direction: column;
 	font-family: helvetica, arial, sans-serif;
 	background-color: #d3cad4d2;
 }
